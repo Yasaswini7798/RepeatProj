@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repEAT</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="stylesheet" href="css/custom1.css" type="text/css">
+    <link rel="shortcut icon" href="images/foodlogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR-1 -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Our Presence</a>
+                <div class="dropdown-menu">
+                    <a href="Hyd.html" class="dropdown-item">Hyderabad</a>
+                    <a href="Bnglr.html" class="dropdown-item">Bangalore</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Become a Member</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#Login" data-backdrop="static" data-keyboard="false">User Login</a>
+                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#user-register" data-backdrop="static" data-keyboard="false">User Registration</a>
+                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#res-register" data-backdrop="static" data-keyboard="false">Restaurant Registration</a>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Login Modal -->
+        <div class="modal" id="Login">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-title text-center">
+                            <h4>Login</h4>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email1" placeholder="Your email address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password1" placeholder="Your password">
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary">Login</button>
+                                </div>
+                            </form>
+                            <div class="text-center text-muted mytext1">or use a social network</div>
+                            <div class="row">
+                                <i class="myl-5 fab fa-facebook-f"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Register modal -->
+        <div class="modal" id="user-register">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-title text-center">
+                            <h4>Sign Up</h4>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email1" placeholder="Your email address" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password1" placeholder="Your password" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="name" class="form-control" id="name1" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="number1" placeholder="Enter your number" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <div class="signup-section">Already a member? <a href="#a" class="text-info text-unstyled"> Login</a>.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Restaurant Register modal -->
+        <div class="modal" id="res-register">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-title text-center">
+                            <h4>Restaurants Registration</h4>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <form>
+                                <div class="form-group">
+                                    <input type="name" class="form-control" id="name1" placeholder="Enter restaurant name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="number1" placeholder="Enter GST number" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="number1" placeholder="Enter phone number" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="address" class="form-control" id="address1" cols="30" rows="10" placeholder="Type Address" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="navbar-nav ml-auto iconstyle">
+            <li class="nav-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- NAVBAR-2 -->
+    <nav class="navbar navbar-expand-md navbar-light ml-auto mybg">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="Home.html">
+            <div class="logo">
+               
+                <h3 style="font-style: italic;">rep<span style="font-style: italic;">EAT</span></h3>
+                </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto mt-3 mynav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">SERVICES</a>
+                    <div class="dropdown-menu">
+                        <a href="#restaurants" class="dropdown-item">Find Restaurants</a>
+                        <a href="grocery.html" target="blank" class="dropdown-item">Order Grocery</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="teams.html">OUR TEAM</a>
+                </li>
+                <li class="nav-item">                    
+                    <button type="button" class="btn btn-dark mybtn">Subscribe for Plans</button>
+                </li>
+            </ul>
+        </div>  
+    </nav>
+
+       <div class="aboutus">
+            <div class="about-us">
+              <img src="images/topbg.jpg" alt="bg1" class="mycaroseling">
+              <div class="carousel-caption">
+                <h1 style="text-align: center;">About Us</h1>
+                
+                <h5 style="text-align:justify;">repEAT has grand plans to be India’s most loved hyper local player, It aims to be the most accessible platform on the network hyperlocal, horizontal and across categories.</h5>
+              </div>
+            </div>
+        
+                                <section id="statement" class="container-md-4">
+                                   
+                                    <div class="container my-3 pb-4 py-5 text-center bg-dark">
+                                        <h2 class="col-md-12" style="margin-top: -30px; color:white;">Easy 3 Step Order</h2>
+                                        <hr class="new2" style="width:30%;">
+                                    <div class="row text-center"style="color:white;">
+                                      
+                                       
+                                        
+                                        <div class="col-md-4">
+                                            <img src="images/setp-img1.png" width="100px" height="100px"> <span class="badge badge-danger">1</span>
+                                            <h3>Explore Restaurants</h3>
+                                            <p1>We offer something unique stand a much better chance of sticking around and getting customers excited about your food.
+                                              </p1>
+                      
+                                        </div>
+                                        <div class="col-md-4">
+                                          <img src="images/setp-img2.png" width="100px" height="100px"><span class="badge badge-danger">2</span>
+                                          <h3>Choose a Tasty Dish</h3>
+                                          <p1>Choose Plan meals and snacks using healthy basics prepared with little or no added  fat, sugar or sodium. 
+                                            </p1>
+                      
+                                      </div>
+                                      <div class="col-md-4">
+                                          <img src="images/setp-img3.png" width="100px" height="100px"><span class="badge badge-danger">3</span>
+                                          <h3>Follow the Status</h3>
+                                          <p1>You can easily track the status of your order to help find out when your delivery will arrive.
+                                            </p1>
+                      
+                                      </div>
+                                    </div>
+                                   
+                                          
+            
+                                        
+                                    </div>
+                                    <h1 style="text-align: center;margin-top: 20px;">TOP RESTURANTS</h1>
+                                            <hr class="new1" style="width:40%;">
+                                            
+                                    <div class="row">
+                                        
+                                        <div class="column">
+                                            <img src="images/top-restaurant6.png" alt="Restaurants">
+                                          </div>
+                                        <div class="column">
+                                          <img src="images/top-restaurant2.png" alt="restaurants">
+                                        </div>
+                                        <div class="column">
+                                          <img src="images/top-restaurant3.png" alt="restaurants">
+                                        </div>
+                                        <div class="column">
+                                            <img src="images/top-restaurant4.png" alt="restaurants">
+                                          </div>
+                                          <div class="column">
+                                            <img src="images/top-restaurant5.png" alt="restaurants">
+                                          </div>
+                                      </div>
+                                      
+                                </body>
+                                <footer class="page-footer font-small bg-dark pt-4">
+                                    <!-- Footer Links -->
+                                    <div class="container text-center text-md-left"> 
+                                    <!-- Grid row -->
+                                    <div class="row">
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 text-light mx-auto">
+                                            <h5 class="font-weight-bold mt-3 mb-4">rep<span style="color: tomato;">EAT</span></h5>
+                                            <img src="images/foodlogo.jpg" alt="brand logo" style="width: 100px;">
+                                        </div>
+                                        <!-- Grid column -->
+                                
+                                        <hr class="clearfix w-100 d-md-none">
+                                
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 mx-auto">
+                                            <!-- Links -->
+                                            <h5 class="font-weight-bold text-uppercase text-light text-center mt-3 mb-4">Quick Links</h5>
+                                            <ul class="list-unstyled text-center">
+                                                <li>
+                                                    <a href="index.html" class="text-light">Home</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-light">About Us</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-light">Services</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-light">Subscribe Plans</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- Grid column -->
+                                
+                                        <hr class="clearfix w-100 d-md-none">
+                                
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 mx-auto">
+                                            <!-- Links -->
+                                            <h5 class="font-weight-bold text-uppercase text-light text-center mt-3 mb-4">useful Links</h5>
+                                            <ul class="list-unstyled text-center">
+                                                <li>
+                                                    <a href="#" class="text-light">Login</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-light">Sign Up</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- Grid column -->
+                                
+                                        <hr class="clearfix w-100 d-md-none">
+                                
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 mx-auto">
+                                            <!-- Links -->
+                                            <h5 class="font-weight-bold text-uppercase text-light text-center mt-3 mb-4">CONTACT</h5>
+                                            <ul class="list-unstyled text-center">
+                                                <li class="text-light">
+                                                    <i class="fas fa-house-user text-primary ml-4"></i>  Gachibowli, Hyderabad - TS
+                                                </li>
+                                                <li class="text-light">
+                                                    <i class="fas fa-phone-square-alt text-primary mr-5"></i> +91-8765493210
+                                                </li>
+                                                <li class="text-light">
+                                                    <i class="fas fa-envelope text-primary mr-4"></i><span class="ml-3">repeat@gmail.com</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- Grid column -->
+                                
+                                    </div>
+                                    <!-- Grid row -->
+                                
+                                    </div>
+                                    <!-- Footer Links -->
+                                    
+                                    <hr> 
+                                    <!-- Social buttons -->
+                                    <ul class="list-unstyled list-inline text-center">
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-floating btn-fb mx-1">
+                                                <i class="fab fa-facebook-f"> </i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-floating btn-tw mx-1">
+                                                <i class="fab fa-twitter"> </i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-floating btn-gplus mx-1">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- Social buttons -->
+                                
+                                    <!-- Copyright -->
+                                    <div class="footer-copyright text-center text-light py-3">© 2021 Copyright : REPEAT.com</div>
+                                    <!-- Copyright -->
+                                
+                                </footer>
+                                <!-- Footer -->
+                            
+                                <!-- SCRIPT -->
+                                <script src="js/jquery.min.js"></script>
+                                <script src="js/popper.min.js"></script>
+                                <script src="js/bootstrap.min.js"></script>
+                            </body>
+                            </html>
