@@ -1,0 +1,125 @@
+.fab
+{
+    color: tomato;
+    margin-left: 20px;
+}
+.mybg
+{
+    background-color: tomato;
+}
+.mynav li a
+{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+.mynav li a,.mybtn
+{
+    margin-left: 10px;
+}
+.mycarouselimg
+{
+    width: 100%;
+    height: 615px;
+}
+.carousel-caption
+{
+    position: absolute;
+    bottom: 200px;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+.h1
+{
+    font-size: 80px;
+    font-style: italic;
+    color: white;
+}
+p
+{
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+}
+.myp
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.btn
+{
+    margin-bottom: 30px;
+}
+.bg-tomato
+{
+    margin-top: 40px;
+    background-color: darkorange;
+}
+.myjumbo
+{
+    background-color: black;
+}
+
+/* @media(max-width:576px)
+{
+    .mycarouselimg .bg2
+    {
+        background-image: url(../images/bg5.jpg);
+        width: 100%;
+        height: 615px;
+    }
+    .ml-5
+    {
+        margin-left: 6rem !important;
+    }
+} */
+
+.mytext
+{
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cmp
+{
+    color: blue;
+}
+
+.myprofile
+{
+    background-color: wheat;
+}
+.close
+{
+    margin-top: 24px;
+}
+.form-title 
+{
+    margin: -32px 0rem 32px;
+}
+.mytext1
+{
+    margin-top: -32px;
+    margin-bottom: 16px;
+}
+.myl-5
+{
+  margin-left: 13rem !important;
+}
+.logo h3{
+  float:right;
+  
+}
+
+.logo h3 span
+{
+    color:white;
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+

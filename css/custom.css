@@ -1,0 +1,171 @@
+
+.mycaroseling
+{
+    width: 100%;
+    height: 400px;
+}
+.carousel-caption
+{
+    bottom: 320px;
+    right: 25%;
+    bottom: 368px;
+    left: 25%;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    color: #fff;
+    text-align:center;
+    padding-left: 80px;
+    margin-bottom: 20px;
+}
+.column {
+  margin-right: 60px;
+  margin-left: 85px;
+  width: 9.33%;
+  padding: 45px;
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.about_cont2 p
+{
+    margin-top:10px;
+  line-height: 21px;
+}
+hr.new1 {
+  border: 1px solid black;
+}
+hr.new2 {
+  border: 2px solid orange;
+}
+.content3
+{
+    width: 80%;
+    background-color:white;
+    color:black;
+    float:right;
+    letter-spacing: .1em;
+    padding: 2%;
+    text-align: justify;
+}
+.about_cont1
+{
+    width:60%;
+    padding-top:2%;
+    padding-right:30%;
+    font-family:inherit;
+}
+.about_cont1 h2
+{ 
+    
+    font-size:40px;
+    
+}
+.about_cont1 p
+{
+    margin-top:20px;
+  line-height: 21px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contact-info-box i {
+  font-size: 60px;
+  color: #999;
+  margin-bottom: 10px;
+}
+.contact-info-box > h5 {
+  font-size: 17px;
+  font-weight: 700;
+  color:black;
+  margin-bottom: 10px;
+}
+.contact-info-box > p {
+  font-size: 15px;
+  color: #666;
+  margin: 0;
+  line-height: 24px;
+	width: 100%;
+}
+.contact-form-inner {
+  max-width: 860px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 75px;
+}
+.contact-form-inner > h3 {
+  font-size: 30px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display:inline-block;
+  max-width: 80%;
+  margin-bottom: 20px;
+  color: #000;
+  line-height: 36px;
+	font-weight: 600;
+  margin-top: 0;
+}
+.contact-form-inner > form {
+  float:right;
+  padding-left: 140px;
+  width: 90%;
+}
+.contact-form-inner > form input,
+.contact-form-inner > form textarea {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  color:black;
+  height: 56px;
+  padding: 20px 40px;
+  background-color: #f6f6f6;
+  margin-top: 25px;
+}
+.contact-form-inner > form textarea 
+{
+  height: 210px;
+}
+.contact-form-inner > form button {
+  background-color:chocolate;
+  color:black;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 17px 40px;
+  display:inline-block;
+  margin-top: 35px;
+}
+.bg-image img {
+  width: 220px;
+  height: auto;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.myteambg
+{
+  background-image: url('../images/team.png');
+  height: 800px;
+}
+#team img{
+  margin-top: -50px;
+}
+#team i{
+  font-size: 16px;
+  color:dodgerblue;
+}
+#team .card
+{
+  border-radius: 0;
+  box-shadow: 5px 5px 15px black;
+}
+.logo h3{
+  float:right;
+  
+}
+
+.logo h3 span
+{
+    color:white;
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
